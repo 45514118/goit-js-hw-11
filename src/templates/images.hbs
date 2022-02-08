@@ -1,0 +1,19 @@
+{{#each this}}
+    <a href='{{largeImageURL}}' target='_blank' class="gallery__item">
+        <img class="gallery__image" src="{{webformatURL}}" alt="{{tags}}" loading="lazy" />
+    <ul class="gallery__info info">
+        <li class="info__item">
+            <b>♡ </b>{{likes}}
+        </li>
+        <li class="info__item">
+            <b>👁 </b>{{views}}
+        </li>
+        <li class="info__item">
+            <b>🗪 </b>{{comments}}
+        </li>
+        <li class="info__item">
+            <b>🡇 </b>{{downloads}}
+        </li>
+    </ul>
+    </a>
+{{/each}}
