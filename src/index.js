@@ -54,7 +54,7 @@ async function fetchImages() {
   }
   appendGalleryMarkup(hits);
   loadMoreBtn.show();
-  if (API.page === 2) {
+  if (API.page === 2 && hits.length !== 0) {
     Notiflix.Notify.success(`Hooray! We found ${totalHits} images.`);
   }
 }
